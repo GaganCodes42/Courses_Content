@@ -1,0 +1,30 @@
+O = Open
+C = Closed
+P = Principle
+
+Simple Defi - Software entities (classe,methods,functions,etc) should be open for extension but closed for modification.
+Issue : this def. is contradictory. As open for extension would mean - polymorphism, inheritance, more code in a class : making sense but closed for modification would mean - no change in class code : meaning refactoring, bug fixes, won't be possible either.
+
+Origianl Defi, by Bertrand Meyer : Open Closed Principle - modules should be open and closed.
+        A module will be said to be open if it is still available for extension. For example, it should be possible to add fields to the data structures it contains, or new elements to the set of functions it performs.
+        A module will be said to be closed if [it] is available for use by other modules. This assumes that the module has been given a well-defined, stable description (the interface in the sense of information hiding).
+
+Current Defi : Depend on stable abstractions and and modify system's behaviour by providing different realizations.
+Means - Using abstractions, we do not need change the original class, but can introduce new behaviour by means of abstract class of the module.
+
+OCP is the principle of polymorphism - IMPORTANT
+OCP and PV (Protected Variation) are two expression of the same principle.
+
+Cost of abstraction - (USE abstractions only when you need them : fact that something that can change doesn't means it has to or will according to predicitions)
+1. Need to write additional codebase.
+2. Abstractions make your code complex.
+3. Wrong abstractions can be extremely hard to fix later.
+4. Not applicable to all classes in the code and protect from all possible changes.
+
+OCP Application Principle - (risk of over-engineering is ever present)
+1. Is anticipated change realted to intrinsic instability of business req.?
+2. What kind of changes usually happen on projects like this one?
+3. If potential change doesn't corresponds to 1 or 2 above, don't apply OCP.
+4. When req. change, identify opport. to extract meaningful abstractions and refactor accordingly.
+
+Proper utilization of OCP allows to provide additional business quickly and safely.

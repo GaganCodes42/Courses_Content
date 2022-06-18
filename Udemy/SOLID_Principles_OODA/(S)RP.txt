@@ -1,0 +1,35 @@
+S = Single
+R = Responsibility
+P = Principle
+(Most important in OOPS)
+
+Simpler Defi - It states that each class in the system should have only one responsibility.
+Issue : This def. doesn't explains what responsibility is and how loose it is meaning to different people. Not very practical def. .
+
+Better way - We should be able to describe what each class does without using 'AND' conjunction.
+Not Practical but Good because - It makes focus on the main and only responsibility of the class.
+
+Best reason - "Each class should have only one reason to change."
+If we can't find a reason to change the class' responsibility in present, it is following SRP as per present.
+
+1. This enables collaboratio - more can discuss on responsibility and SRP following of class
+2. Questions about change can be escalated.
+
+Therefore, responsibility = reason to change
+
+More than one reason to chane = violation of SRP and leads to excessive coupling
+
+Involvement of different stakeholders at class level functionality is an indicator of class-level funcitonality.
+ - Code can't be trace to different stakeholders most of the time.
+ - So extract individual responsibility into individual classes.
+ - Break features into smaller classes for easier re-use.
+
+Be-aware of OVER-ENGINEERING and BE PRAGMATIC !
+Perform SRP analysis before writing code to safe refactoring effort !!!
+
+Benefits of SRP -
+1. Smaller, narrowly focused componenets.
+2. Encapsutlation of the most probable changes within specific componenets.
+3. Better implementation decisions.
+4. Simple reuse of existing funcitonality.
+5. More felxibility to codebase as whole.

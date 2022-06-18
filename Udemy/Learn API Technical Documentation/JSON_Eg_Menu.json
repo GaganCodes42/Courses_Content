@@ -1,0 +1,17 @@
+{
+"menu":
+[
+  {"header":"File",
+    "items": [
+      {"id":"Open","Label":"Open"},
+      {"id":"New","Label":"New"},
+      {"id":"Close","Label":"Close"}]
+  },
+  {"header":"Option",
+    "items": [
+      {"id":"Zoom In","Label":"Zoom In"},
+      {"id":"Zoom out","Label":"Zoom out"},
+      {"id":"Original View","Label":"Original View"}]
+  }
+]
+}

@@ -1,0 +1,9 @@
+Abstraction - Alternate repre. of a concept that hides irrelevant details. Exposes only properties we are interested in.
+
+OOD Abstraction (in order of innermost circle to outermost)
+Statement -> Method -> Object -> Module -> Application
+
+Clean code - Proper utilization of meaningful and convenient abstractions to manage complexity.
+
+Fundamental theorem of computer science -
+"Any level of problem can be solved using multiple indirections (abstraction) as needed - exceept the problem of too many indirections."

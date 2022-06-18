@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding "UTF-8"?>
+<song title="Hey Jude" artists="The Beatles">
+  <musicians>
+    <musician name = "John"/>
+    <musician name = "Paul"/>
+    <musician name = "Ringo"/>
+    <musician name = "George"/>
+  </musicians>
+</song>

@@ -1,0 +1,56 @@
+L = Liskov
+S = Substitution
+P = Principle
+
+Simpler Defi - If S is a subtype of T, then objects of T should be replaceable by with objects of type S without altering
+any of the desireable properties of the program (correctness, task performed, etc.).
+
+Subtype - Subclass or realization which can be substituted for the type it extends or implements.
+An abstraction's implementation cannot be a considered as subtype of abstraction class and are replaceable in use of talk and display.
+
+LSP rules -
+
+I. LSP Method Signature Rules :
+
+1. Contravariance of arguments -
+(a) If subclass implements a method from its superclass , then the number of arguments should be same.
+(b) The type of each argument in subclass method should be the supertype of type of the respective argument in supertype method.
+Point - Compilers enforce contravariance of arguments in statically typed programming languages.
+
+2.Covariance of result -
+Either both superclass' and subclass' methods return a result or neither does.
+If there is a result, then the type of the result in subclass of is a subtype of the result in the superclass.
+Point - Compilers enforce covariance of arguments in statically typed programming languages.
+
+3. Exception Rule -
+Exceptions thrown by a method in the subclass should be contained in the set of exceptions thrown by the respective method in the superclass.
+
+ -> Checked vs Unchecked Exceptions
+  1. Exception rule is enforced by the compiler for "checked exceptions".
+  2. The compiler doesn't checks "unchecked" exceptions.
+  (Need to check that the exception in subclass is not out of bounds to that of the superclass it inherits)
+
+II - Pre and Post Condition Rules -
+(Pre is about asssertion on state of system when module is called, whereas Post is about asssertion on state of system when module is executed)
+
+Pre-Condition Rule : Pre-Condition required by the methods of a subclass must not be stronger than pre-conditions required by methods of superclass.
+Post-condition Rule : Post-Condition garunteed by the methods of a subclass must not be weaker than post-conditions required by methods of superclass.
+
+III - Class Property Rule -
+
+1. Invariant Rule : Invariants garunteed by a subclass must include all invariants garunteed by a superclass.
+
+Invariat Characteristics -
+Independent of the history, relatively easy to identify and reason about -> but can't express dynamic properties of class.
+
+2. Contraint Rule : Constrants enforced by a subclass must include all contraints enforced by a superclass.
+___________________________________________________________
+
+Rules of Thumb -
+
+1. Don't make subclass methods' arguments more specific !
+2. Don't make subclass return methods' return type more general !
+3. A subclass should be able to operate in all states that a superclass can operate in.
+4. Clients shouldn't be surprised by the result of invocation of methods of a subclass,
+
+But don't apply LSP practically to all classes. To time taking. Depends on situation and need.

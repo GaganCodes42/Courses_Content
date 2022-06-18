@@ -1,0 +1,23 @@
+D = Dependency
+I = Inversion
+P = Principle
+
+Simple Defi - High level modules should not depend on low-level modules. Both should depend on abstractions.
+                                              AND
+              Abstractions should not depend on details and details should depend on abstractions.
+
+Point - Abstractions invert dependencies between classes.
+
+DIP benefits:
+1. Break depedency on the schedule of another componenet/external modules.
+2. Easier integration.
+3. Increased visibility and better accountability.
+4. Reusability.
+5. Protection from future changes in requirements.
+
+DIP costs -
+1. More effort to implement.
+2. More effort to change.
+3. Increased code complexity due to integration.
+
+Don't use DIP for sake of it !!! but inverted dependencies benefits are more than the costs if used judiciously.

@@ -1,0 +1,22 @@
+I = Interface
+S = Segregation
+P = Principle
+
+Principle of least knowledge and information hiding.
+
+Simple Defi - Clients shouldn't be forced to depend on methods they don't use.
+Can divide the main functionanlity of the function into different abstractions and then implemented accordingly.
+
+Pub-Sub system follows OCP and ISP both.
+
+Benefits of ISP -
+1. Explicit and clear dependencies
+2. More readable code without puzzling empty methods.
+3. Easy to find all clients which are interested in a specific message (from Pub-Sub example) = means easy to find a issue related to a specific function.
+4. Safe and easy addition of new features in the features.
+
+High Level Benefits of ISP -
+1.Communicate what clients do with their services.
+2.Communicate what clients don't do with their services.
+3.Restrict what clients can do with their services.
+4.Segregated interfaces allow to segregate functionanlity if/when needed.
